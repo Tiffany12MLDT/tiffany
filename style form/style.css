@@ -1,0 +1,13 @@
+label {
+    color: red;
+    font-size: large;
+}
+
+button {
+    color: blue;
+    border-radius: 25px;
+}
+
+input {
+    border-radius: 10px;
+}
