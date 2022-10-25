@@ -3,9 +3,11 @@ img {
     border-width: 6px;
     border-style: solid;
     border-radius: 50%;
+    margin: 15px 0px 0px 50px;
 }
 
 button {
+    margin: 15px 0px 0px 50px;
     color: rgb(191, 0, 255);
     border-radius: 10px;
     margin: 50px 0px 0px 50px;
@@ -15,4 +17,9 @@ button {
 
 h4 {
     color: green;
+    margin: 15px 0px 0px 50px;
+}
+
+a {
+    margin: 15px 0px 0px 50px;
 }
