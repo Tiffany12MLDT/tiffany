@@ -1,0 +1,34 @@
+img {
+    border-radius: 100px;
+
+    
+}
+
+th {
+    border-color: rgb(255, 0, 247);
+    border-width: 6px;
+    border-style: solid;
+    border-radius: 0%;
+   background-color: rgb(185, 107, 199);
+} 
+
+td{
+    border-color: rgb(255, 0, 238);
+    border-width: 6px;
+    border-style: solid;
+    border-radius: 0%;
+}
+ul{border-color: rgb(0, 0, 0);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 0%;}
+    
+
+
+div{border-width: 3px;
+    border-style: solid;
+    border-radius: 0%;}
+
+
+
+
