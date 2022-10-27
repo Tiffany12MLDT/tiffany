@@ -1,34 +1,32 @@
 img {
     border-radius: 100px;
-
-    
 }
 
 th {
-    border-color: rgb(255, 0, 247);
+    border-color: rgb(132, 0, 255);
     border-width: 6px;
     border-style: solid;
     border-radius: 0%;
-   background-color: rgb(185, 107, 199);
-} 
+    background-color: rgb(212, 170, 219);
+}
 
-td{
-    border-color: rgb(255, 0, 238);
+td {
+    border-color: rgb(132, 0, 255);
     border-width: 6px;
+    border-style: solid;
+    border-radius: 0%;
+    background-color: rgb(212, 170, 219);
+}
+
+ul {
+    border-color: rgb(0, 0, 0);
+    border-width: 1px;
     border-style: solid;
     border-radius: 0%;
 }
-ul{border-color: rgb(0, 0, 0);
-    border-width: 2px;
+
+div {
+    border-width: 3px;
     border-style: solid;
-    border-radius: 0%;}
-    
-
-
-div{border-width: 3px;
-    border-style: solid;
-    border-radius: 0%;}
-
-
-
-
+    border-radius: 0%;
+}
