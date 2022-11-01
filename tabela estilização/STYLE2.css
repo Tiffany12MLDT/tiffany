@@ -26,7 +26,27 @@ ul {
 }
 
 div {
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 0%;
+     flex-direction: row;
+    justify-content: space-around;
+
+}
+
+header{
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+.imgheader{
+    width: 60px;
+    height: 60px;
 }
