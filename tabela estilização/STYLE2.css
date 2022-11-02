@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Griffy&display=swap');
+
+
+
+
+
 img {
     border-radius: 100px;
 }
 
 th {
-    border-color: rgb(132, 0, 255);
+    font-family: 'Griffy', sans-serif;
+    border-color: rgb(142, 174, 132);
     border-width: 6px;
     border-style: solid;
     border-radius: 0%;
@@ -11,7 +18,7 @@ th {
 }
 
 td {
-    border-color: rgb(132, 0, 255);
+    border-color: rgb(142, 174, 132);
     border-width: 6px;
     border-style: solid;
     border-radius: 0%;
@@ -20,18 +27,18 @@ td {
 
 ul {
     border-color: rgb(0, 0, 0);
-    border-width: 1px;
+    border-width: 6px;
     border-style: solid;
     border-radius: 0%;
 }
 
 div {
-     flex-direction: row;
+    flex-direction: row;
     justify-content: space-around;
-
 }
 
 header{
+    background-color: rgb(149, 116, 162);
     height: 80px;
     display: flex;
     justify-content: space-around;
@@ -39,14 +46,23 @@ header{
     position: fixed;
     z-index: 1;
     top: 0;
+    border-radius: 10px;
 }
 .container{
     display: flex;
     justify-content: center;
     flex-direction: row;
-
 }
 .imgheader{
     width: 60px;
     height: 60px;
+}
+a{ 
+    font-size: large;
+    margin: 6x;
+    padding: 4px;
+    color: black;
+}
+h1{
+    margin: 5px;
 }
