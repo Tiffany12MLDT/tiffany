@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Griffy&display=swap');
+h1 {
+    font-family: 'Dancing Script', sans-serif;
+    color: black
+}
 
-h1{
-
-  font-family: 'Dancing Script', sans-serif;
-  color:black
-}  
-h2{ 
-    
-  font-family: 'Griffy', sans-serif;
-  color:black
+h2 {
+    font-family: 'Griffy', sans-serif;
+    color: black
 }

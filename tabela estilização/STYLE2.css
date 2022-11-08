@@ -1,68 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Griffy&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Griffy&display=swap');
 
+    th {
+        font-family: 'Griffy', sans-serif;
+        border-color: rgb(41, 51, 160);
+        border-width: 6px;
+        border-style: solid;
+        border-radius: 0%;
+        background-color: rgb(212, 170, 219);
+    }
+    
+    td {
+        border-color: rgb(41, 51, 160);
+        border-width: 6px;
+        border-style: solid;
+        border-radius: 0%;
+        background-color: rgb(212, 170, 219);
+    }
+    
+    ul {
+        border-color: rgb(0, 0, 0);
+        border-width: 6px;
+        border-style: solid;
+        border-radius: 0%;
+    }
+    
+    div {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    header {
+        background-color: rgb(149, 116, 162);
+        height: 80px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        border-radius: 10px;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+    .imgheader {
+        width: 60px;
+        height: 60px;
+    }
+    
+    a {
+        font-size: large;
+        margin: 6x;
+        padding: 4px;
+        color: black;
+    }
+    
+    h1 {
+        margin: 5px;
+    }
 
-
-
-
-img {
-    border-radius: 100px;
-}
-
-th {
-    font-family: 'Griffy', sans-serif;
-    border-color: rgb(142, 174, 132);
-    border-width: 6px;
-    border-style: solid;
-    border-radius: 0%;
-    background-color: rgb(212, 170, 219);
-}
-
-td {
-    border-color: rgb(142, 174, 132);
-    border-width: 6px;
-    border-style: solid;
-    border-radius: 0%;
-    background-color: rgb(212, 170, 219);
-}
-
-ul {
-    border-color: rgb(0, 0, 0);
-    border-width: 6px;
-    border-style: solid;
-    border-radius: 0%;
-}
-
-div {
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-header{
-    background-color: rgb(149, 116, 162);
-    height: 80px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    border-radius: 10px;
-}
-.container{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-.imgheader{
-    width: 60px;
-    height: 60px;
-}
-a{ 
-    font-size: large;
-    margin: 6x;
-    padding: 4px;
-    color: black;
-}
-h1{
-    margin: 5px;
+@media screen and (max-device-width:768px)
+ {
+    img{
+    width:200px;
+    }
+    td{
+background-color: rgb(105, 61, 113);
+    }
+     th {
+        font-size:medium
+        }
 }
