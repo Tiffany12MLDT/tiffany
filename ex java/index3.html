@@ -3,62 +3,54 @@
 <html>
 
 <head>
-    <title>Exemplo com Script</title>
-   
-</head>
-
-
-
-
-
-<script type="text/javascript">
-function calcula_imc(){
-var altura = document.imcForm.altura.value;
-var peso = document.imcForm.peso.value;
-
-var quadrado = (altura * altura);
-
-var calculo = (peso/quadrado);
-
-if(calculo<18.5){
-alert("Você está magro com esse indice: " + calculo);
-}
-else if(calculo>=18.5 && calculo<24.9){
-alert("Você está normal com esse indice: " + calculo);
-}
-
-else if(calculo>=25 && calculo<29.9) {
-alert("Você está com sobre peso com esse indice: " + calculo);
-}
-else if(calculo>=30 && calculo<39.9) {
-alert("Você está com obesidade com esse indice: " + calculo);
-}
-else if (calculo>40)
-alert("Você estácom obesidade grave com esse indice: " + calculo);
-}
-
-</script>
-
 <title>Documento sem título</title>
 </head>
 
+
 <body>
 
-<form name="imcForm" id="imcForm" action="#">
-
-<p>
-Altura<br />
-<input type="text" id="altura" name="altura" />
-</p>
-
-<p>Peso <br />
-<input type="text" id="peso" name="peso" />
-</p>
-
-<p>
-
-</p>
-<p><input name="Enviar" type="submit" value="Calcular" onclick="calcula_imc()" />
-</p>
+<form id="formulario">
+        <h2 id="imc"></h2>
+        <input type="text" placeholder="Digite um peso" id="peso">
+        <input type="text" placeholder="Digite um altura" id="altura">
+        <input type="submit" value="Enviar">
 </form>
+
+
+<script>
+        // Recuperei dados informados pelo user
+        var form = document.getElementById('formulario');
+        let a = document.getElementById('altura'); // obj 
+        let p = document.getElementById('peso'); // obj 
+
+form.addEventListener('submit', function(e) {
+        // Extraindo somente o value
+        altura = a.value;
+        peso = p.value;
+       
+// calculo 
+const imc = peso/(altura*altura)
+
+if(imc< 20){
+alert("Abaixo do peso");
+}
+else if(imc>= 20 && imc< 25){
+alert("Peso normal");
+}
+
+else if(imc>= 25 && imc< 28) {
+alert("Pouco acima do peso");
+}
+else if(imc>= 28 && imc< 31) {
+alert("Acima do peso");
+}
+else if (imc>=31)
+alert( "Obeso");
+
+document.getElementById("imc").innerHTML = "Seu IMC é: "+imc;
+e.preventDefault();
+});
+
+</script>
+</body>
 </html>

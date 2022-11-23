@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Documento sem título</title>
+</head>
+
+
+<body>
+
+<form id="formulario">
+        <h2 id="imc"></h2>
+        <input type="text" placeholder="Digite o Ano" id="Ano">
+        <input type="submit" value="Enviar">
+</form>
+
+
+<script>
+        // Recuperei dados informados pelo user
+        var form = document.getElementById('formulario');
+        let ano = document.getElementById('Ano'); // obj 
+    
+
+form.addEventListener('submit', function(e) {
+        // Extraindo somente o value e calculando a idade
+         idade = 2022 - ano.value
+       
+         if(idade>=16){
+            alert('Voce pode votar')
+         }
+         else{
+            alert('Voce nao pode votar')
+         }
+        
+document.getElementById("imc").innerHTML = "Sua idade:"+idade;
+e.preventDefault();
+});
+
+</script>
+</body>
+</html>
