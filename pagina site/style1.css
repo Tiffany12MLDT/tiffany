@@ -1,95 +1,52 @@
  @import url('https://fonts.googleapis.com/css2?family=Griffy&display=swap');
 
-    th {
-        font-family: 'Griffy', sans-serif;
-        border-color: rgb(41, 51, 160);
-        border-width: 6px;
-        border-style: solid;
-        border-radius: 0%;
-        background-color: rgb(212, 170, 219);
-    }
+
+header {
+    background-color: #F9003D;
+    height: 80px;
+    position: fixed;
+    width: 2000px;
+    z-index: 99;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.banner { 
+    background-image: url(../img/imagem-fundo-banner.jpg);
+    height: 800px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
     
-    td {
-        border-color: rgb(41, 51, 160);
-        border-width: 6px;
-        border-style: solid;
-        border-radius: 0%;
-        background-color: rgb(212, 170, 219);
-    }
     
-    ul {
-        border-color: rgb(0, 0, 0);
-        border-width: 6px;
-        border-style: solid;
-        border-radius: 0%;
-    }
-    
-    div {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    
-    header {
-        background-color: rgb(255, 0, 0);
-        height: 120px;
-        display: flex;
-        justify-content:space-between;
-        align-items: center;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        border-radius: 10px;
-    }
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-    .container {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-    }
-    
-    .imgheader {
+.imgheader {
         width: 60px;
         height: 60px;
     }
     
-    a {
+a {
         font-size: large;
-        margin: 6x;
-        padding: 4px;
-        color: black;
+        margin: 9x;
+        padding: 9px;
+        color: rgb(255, 255, 255);
     }
+ .div_logo{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+ }
+.div_links{
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+ }
+footer{
  
+    background-color: #F9003D;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 
-
-
-
-
-    h1 {
-        margin: 5px;
-    }
-
-@media screen and (max-device-width:768px)
- {
-    img{
-    width:300px;
-    }
-    td{
-background-color: rgb(105, 61, 113);
-    }
-     th {
-        font-size:medium
-        }
 }
