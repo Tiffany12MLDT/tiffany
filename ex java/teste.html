@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Documento sem título</title>
+</head>
+
+
+<body>
+
+<form id="formulario">
+        <h2 id="imc"></h2>
+        <input type="text" placeholder="Digite um peso" id="peso">
+        <input type="text" placeholder="Digite um altura" id="altura">
+        <input type="submit" value="Enviar">
+</form>
+
+
+<script>
+        // Recuperei dados informados pelo user
+        var form = document.getElementById('formulario');
+        let a = document.getElementById('altura'); // obj 
+        let p = document.getElementById('peso'); // obj 
+
+form.addEventListener('submit', function(e) {
+        // Extraindo somente o value
+        altura = a.value;
+        peso = p.value;
+       
+// calculo 
+const imc = peso/(altura*altura)
+
+if(imc< 20){
+alert("Abaixo do peso");
+}
+else if(imc>= 20 && imc< 25){
+alert("Peso normal");
+}
+
+else if(imc>= 25 && imc< 28) {
+alert("Pouco acima do peso");
+}
+else if(imc>= 28 && imc< 31) {
+alert("Acima do peso");
+}
+else if (imc>=31)
+alert( "Obeso");
+
+document.getElementById("imc").innerHTML = "Seu IMC é: "+imc;
+e.preventDefault();
+});
+
+</script>
+</body>
+</html>
